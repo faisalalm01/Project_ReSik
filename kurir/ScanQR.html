@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Scan QR</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../css/bootstrap.min.css">
+   </head>
+<body>
+  
+<div class="container">
+  <div class="sidebar">
+    <div class="logo-details">
+      <img class='bx bxl-c-plus-plus icon lg' src="../img/logo3.png" alt="">
+        <div class="logo_name">ReSik</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class='nav-list'>
+   
+      <li>
+        <a href="./Home.html">
+          <i class='bx bxs-home' ></i>
+          <span class="links_name">Beranda</span>
+        </a>
+         <span class="tooltip">Beranda</span>
+      </li>
+    
+     <li>
+      <a href="./ScanQR.html">
+        <i class='bx bx-scan'></i>
+        <span class="links_name">Scan QR</span>
+      </a>
+      <span class="tooltip">Scan QR</span>
+    </li>
+    <li>
+      <a href="akun.html">
+        <i class='bx bx-user' ></i>
+        <span class="links_name">Akun</span>
+      </a>
+      <span class="tooltip">Akun</span>
+    </li>
+    
+  </ul>
+</div>
+
+
+
+<!-- halaman konten -->
+<!-- konten tengah -->
+    <section class="home-section ">
+      <div class="m-3">
+      <div class="row m-1">
+        
+      <div class="col-md-9">
+      <div class="card-right main p-4">
+          <div class="row">
+            <div class="col-md-12 pt-3 p-4">
+            <h5 style="font-size: 20px;">Riwayat Penukaran Hadiah</h5>
+            <p class="pt-3">Masukkan ID / No Handphone Pengguna</p>
+            <button onclick="on()" class=" float-right ml-5 w-25 btn-card-nxt" >Lanjut</button>
+            <div class="row mt-2">
+              <form action="">
+                <div class="form-row">
+                  <div class="col-md-3">
+                    <input type="text" class="form-control" placeholder="xxxx">
+                  </div>
+                  <div class="col-md-3">
+                    <input type="text" class="form-control" placeholder="xxxx">
+                  </div>
+                  <div class="col-md-3">
+                    <input type="text" class="form-control" placeholder="xxxx">
+                  </div>
+                </div>
+              </form>
+              
+              
+          </div>
+          </div>
+            </div>
+          </div>
+          <section class="card-right main p-4 mt-4 sec">
+            
+              <div class="p-3 text-center">
+              <h5 style="font-size: 20px;">Pindai dengan QR</h5>
+              <button onclick="on()" class=" btn-card mt-3" disable>Pindai</button>
+            </div>
+            
+            </section>
+
+            
+          <div id="overlay" onclick="off()">
+            <div id="text" class="card">
+              <div class="card-body">
+              <img style="width: 15%;" class=" float-left pt-2 col-md-3" src="./img/profile.png" alt=""><h5 class="mt-4 col-md-4">Winnie</h5>
+              <div class="card-body">
+              <small class="text-muted mt-5">Masukkan jumlah sampah dalam satuan kg</small>    
+              <form action="">
+                <button onclick="on()" class=" float-right mt-4 ml-5 w-25 btn-card-nxt" >simpan</button>
+                <div class="form-row mt-3">
+                  <div class="col-md-3">
+                    <label for="">Organik</label>
+                    <input type="text" class="form-control" placeholder="x">
+                  </div>
+                  <div class="col-md-3">
+                    <label for="">Anorganik</label>
+                    <input type="text" class="form-control" placeholder="x">
+                  </div>
+                </div>
+              </form>
+              
+            </div>       
+            </div>
+            </div>
+          </div>
+        </div>
+        
+      
+
+    <!-- konten kanan -->
+    <div class="col-md-3">
+      <div class="card py-3 mb-4 border-0 shadow-sm" style="border-radius: 20px; background-color: #EFF8F1;">
+        <img class="profile" src="./img/pp2.png" class="card-img-top" alt="...">
+          <h5 class="card-title mt-3 text-center">Faishal</h5>   
+    </div>
+    <div class="card p-4 border-0 shadow-sm"  style="border-radius: 20px;background-color: #EFF8F1;">
+        <h5 class="card-title">Perolehan Anda :</h5>
+        <form action="">
+          <fieldset disabled="disabled">
+        <div class="form-group">
+          <label for="">Organik</label>
+          <input type="email" class="form-control text-center" id="namaPengguna" placeholder="30">
+        </div>
+        <label for="">Anorganik</label>
+        <div class="form-group">
+          <input type="email" class="form-control text-center" id="namaPengguna" placeholder="30">
+        </div>
+      </fieldset>
+      </form>
+    </div>
+    </div>
+    <!-- footer -->
+       <footer class="col-md-12 mt-4 pl-5 py-4 scs">
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <h6 class="mb-1">IKUTI KAMI</h6>
+          </li>
+          <li class="list-inline-item">
+            <i class='bx bxl-instagram'></i>
+            <i class='bx bxl-facebook-circle'></i>
+            <i class='bx bxl-twitter' style='color:#ffffff'  ></i>  
+            <i class='bx bxl-youtube'></i>
+            </li>
+        </ul>      
+
+        <ul class="list-inline">
+          
+          <li class="list-inline-item">
+            <font style="font-size: 13px; color: #ffffff;"><b>© 2021 RESIK</b></font>
+            <font class="m-3"><b>|</b></font>
+          </li>
+          <li class="list-inline-item">
+            <font style="font-size: 13px">
+            <a class="pr-3" href="" style="color: #ffffff;">Hubungi kami</a>
+            <a class="pr-3" href="" style="color: #ffffff;">Kebijakan & Privasi</a>
+            <a class="pr-3" href="" style="color: #ffffff;">Syarat & Ketentuan</a>
+          </font>
+           </li>
+        </ul>    
+      </footer>
+    </div>
+    </div>
+    </section>
+  </div>
+      
+      
+  
+  <script src="script.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/479a3ade84.js" crossorigin="anonymous"></script> 
+  <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+
+</body>
+</html>
